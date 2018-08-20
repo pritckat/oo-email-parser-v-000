@@ -4,8 +4,12 @@
 # or whitespace (' ').
 class EmailParser
   #emails = []
+  def initialize(string_of_emails)
+    @string = string_of_emails
+  end
+  
   def parse
-    emails = string.split(/[ |,]/)
+    @emails = string.split(/[ |,]/)
   end
 
 
